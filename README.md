@@ -1,3 +1,11 @@
+###  DATE: 13-02-24
+
+###  NAME: SRIVATSAN V
+###  ROLL NO :212223110053
+###  DEPARTMENT: CSE(IOT)
+
+
+
 # EXPERIMENT-01-INTERFACING-A-DIGITAL-OUTPUT-TO-IOT-DEVELOPMENT-BOARD
 
 ## Aim: To Interface a Digital output (LED) to ARM IOT development board and write a  program to blink an led 
@@ -78,12 +86,24 @@ The main features of LPC2148 include the following.
 
 
 ## STM 32 CUBE PROGRAM :
-
-
-
+```
+#include "main.h"
+#include "stdio.h"
+ while (1)
+  {
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+	  HAL_Delay(1000);
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+	  HAL_Delay(1000);
+  }
+```
 ## Output  :
- 
- 
+## (i)LED IS ON:
+ ![Screenshot 2024-02-22 140839](https://github.com/Srivatsan0405/EXPERIMENT-01-INTERFACING-A-DIGITAL-OUTPUT-TO-IOT-DEVELOPMENT-BOARD-/assets/139841630/6487a1c7-c50e-4ba7-b967-4f14f3bcfdf8)
+ ## (ii)LED IS OFF:
+![Screenshot 2024-02-22 140932](https://github.com/Srivatsan0405/EXPERIMENT-01-INTERFACING-A-DIGITAL-OUTPUT-TO-IOT-DEVELOPMENT-BOARD-/assets/139841630/0701311b-33af-4f16-b135-409544600e6c)
+
+
  
  
 ## Result :
